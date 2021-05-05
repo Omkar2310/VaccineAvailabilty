@@ -2,7 +2,7 @@ function getdata() {
   var pincode = document.getElementById("pincode");
   var date = document.getElementById("datepick");
   date = date.value.split("-").reverse().join("-");
-  console.log("Pincode " + pincode.value + " " + "DatePicker" + date);
+  //console.log("Pincode " + pincode.value + " " + "DatePicker" + date);
   pincode = pincode.value;
   var api_url = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=${pincode}&date=${date}`;
 
@@ -86,7 +86,7 @@ function show(data) {
 async function getapi(url, pincode, date) {
   const response = await fetch(url);
   var data = await response.json();
-  console.log(data.centers);
+  //console.log(data.centers);
   data = data.centers;
   if (data.length === 0) {
     document.getElementById("tabdata").style.display = "none";
