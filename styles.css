@@ -1,0 +1,57 @@
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+}
+
+#msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#tabdata {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 1.5em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px 20px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#tabdata th {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.tabdata th,
+.tabdata  td {
+    padding: 12px 15px;
+    border: 1px solid black;
+
+}
+
+
+.tabdata tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabdata tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tabdata tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+

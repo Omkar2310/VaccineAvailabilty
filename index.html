@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="script.js">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </script>
+    <title>Cowin Vacciner Notifier</title>
+</head>
+<body>
+    <div id="header">
+    <h1 >Vaccine Notifier</h1>
+    </div>
+
+    <form onsubmit="getdata()">
+        <table class="table">
+         <tr>
+          <td>PinCode :</td> <td><input placeholder="Enter Pincode" type="text" id="pincode" name="pincode"></td><br>
+         </tr>
+         <tr>
+          <td>Date Picker :</td> <td><input placeholder="Enter Date" type="date" id="datepick" name="datepick"></td><br>
+         </tr>
+         
+         <tr>
+          <td><input type="button" onclick="getdata()" value="Fetch Center Data"></td>
+         </tr>
+        </table>
+        <span id="msg"></span>
+        <table id="tabdata"></table>
+    </form>
+        
+
+    
+</body>
+</html>
